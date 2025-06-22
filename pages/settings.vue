@@ -23,28 +23,6 @@
               <legend class="sr-only">Tavus API Configuration</legend>
               
               <div>
-                <label class="label" for="replica_id">
-                  Replica ID <span class="text-red-600" aria-label="required">*</span>
-                </label>
-                <input
-                  id="replica_id"
-                  v-model="formData.replica_id"
-                  type="text"
-                  class="input-field"
-                  placeholder="Enter your replica ID"
-                  required
-                  aria-describedby="replica_id_help"
-                  :aria-invalid="!formData.replica_id && formSubmitted ? 'true' : 'false'"
-                />
-                <p id="replica_id_help" class="text-xs text-gray-500 mt-1">
-                  The unique identifier for your Tavus replica
-                </p>
-                <div v-if="!formData.replica_id && formSubmitted" class="text-red-600 text-sm mt-1" role="alert">
-                  Replica ID is required
-                </div>
-              </div>
-
-              <div>
                 <label class="label" for="persona_id">
                   Persona ID <span class="text-red-600" aria-label="required">*</span>
                 </label>
@@ -63,6 +41,28 @@
                 </p>
                 <div v-if="!formData.persona_id && formSubmitted" class="text-red-600 text-sm mt-1" role="alert">
                   Persona ID is required
+                </div>
+              </div>
+
+              <div>
+                <label class="label" for="replica_id">
+                  Replica ID <span class="text-red-600" aria-label="required">*</span>
+                </label>
+                <input
+                  id="replica_id"
+                  v-model="formData.replica_id"
+                  type="text"
+                  class="input-field"
+                  placeholder="Enter your replica ID"
+                  required
+                  aria-describedby="replica_id_help"
+                  :aria-invalid="!formData.replica_id && formSubmitted ? 'true' : 'false'"
+                />
+                <p id="replica_id_help" class="text-xs text-gray-500 mt-1">
+                  The unique identifier for your Tavus replica
+                </p>
+                <div v-if="!formData.replica_id && formSubmitted" class="text-red-600 text-sm mt-1" role="alert">
+                  Replica ID is required
                 </div>
               </div>
 
