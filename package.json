@@ -1,0 +1,19 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "HOST=0.0.0.0 npx nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "npx nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.13.0",
+    "@nuxt/ui": "^2.18.4",
+    "@pinia/nuxt": "^0.5.1",
+    "pinia": "^2.1.7",
+    "@headlessui/vue": "^1.7.16"
+  }
+}
